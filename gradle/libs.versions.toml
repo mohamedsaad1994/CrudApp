@@ -1,0 +1,242 @@
+[versions]
+
+android-gradle                      = "7.3.1"
+
+core                                = "1.7.0"
+appcompat                           = "1.4.1"
+material                            = "1.7.0"
+constrain                           = "2.1.4"
+activity                            = "1.5.1"
+fragment                            = "1.5.5"
+swiperefreshlayout                  = "1.1.0"
+picasso                             = "2.8"
+detekt                              = "1.23.0-RC2"
+
+#Kotlin
+kotlin                              = "1.8.10"
+kotlin-coroutines                   = "1.6.4"
+kotlin-serialization                = "1.4.1"
+kotlin-serialization-converter      = "0.8.0"
+#preferences
+preferences                          ="1.0.0"
+#Network
+retrofit                             = "2.9.0"
+okhttp                               = "4.9.1"
+gson                                 = "2.9.1"
+formatLogIntercepter                 = "3.1.0"
+#HILT
+hilt                                = "2.44.2"
+hilt-common                         = "1.0.0"
+hilt-work                           = "1.0.0"
+hilt-compiler-work                  = "1.0.0"
+injector                            = "1"
+# test libraries
+test-junit                          = "4.13.2"
+test-junit-ex                       = "1.1.2"
+test-mockk                          = "1.13.3"
+test-robolectric                    = "4.5.1"
+truth                               = "1.1.3"
+robolectric                         = "4.9"
+testCore                            = "1.5.0"
+livedata-test                       = "2.2.0"
+espresso-version                    = "3.3.0"
+testRulesVersion                    = "1.3.0"
+mockito-test                        ="5.1.0"
+# android test libraries
+test-android-runner                 = "1.5.2"
+
+# Dimension
+dimension                           ="1.0.6"
+
+#Navegation
+nav                                 ="2.5.3"
+
+#lifeCycle
+lifecycle_version                   = "2.6.1"
+
+#timber
+timber_version                      ="5.0.1"
+
+#room
+room_version                       ="2.5.1"
+
+#firebase crashlytics
+crashlytics_version = "18.3.7"
+#firebase crahslytics plugin
+crashlytics_plugin_version = "2.9.5"
+#firebase remote config
+remote_config_version = "21.6.1"
+#firebase analytics
+analytics_version = "21.5.1"
+#gms
+gms_version = "4.3.14"
+#worker manager
+worker_version = "2.8.1"
+[plugins]
+
+android-application                 = { id = "com.android.application", version.ref = "android-gradle" }
+android-library                     = { id = "com.android.library", version.ref = "android-gradle" }
+hilt                                = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+kotlin                              = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-kapt                         = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+kotlin-parcelize                    = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
+kotlin-serialization                = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+detekt                              = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
+navigation-args                     = { id = "androidx.navigation.safeargs", version.ref = "nav" }
+gms                                 = { id = "com.google.gms.google-services",version.ref="gms_version" }
+crashlytics                         = { id = "com.google.firebase.crashlytics",version.ref="crashlytics_plugin_version" }
+
+[libraries]
+core                                = { module = "androidx.core:core-ktx", version.ref = "core" }
+appcompat                           = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+material                            = { module = "com.google.android.material:material", version.ref = "material" }
+constrain                           = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constrain" }
+activity                            = { module = "androidx.activity:activity-ktx", version.ref = "activity" }
+fragment                            = { module = "androidx.fragment:fragment-ktx", version.ref = "fragment" }
+swiperefreshlayout                  = { module = "androidx.swiperefreshlayout:swiperefreshlayout", version.ref = "swiperefreshlayout" }
+picasso                             = { module = "com.squareup.picasso:picasso", version.ref = "picasso" }
+
+# Dimension
+intuitsp                             = { module = "com.intuit.ssp:ssp-android", version.ref = "dimension" }
+intuitdp                             = { module = "com.intuit.sdp:sdp-android", version.ref = "dimension" }
+
+#HILT
+hilt                                = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+hilt-compiler                       = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
+injector                            = { module = "javax.inject:javax.inject", version.ref = "injector" }
+
+#KOTLIN
+kotlin-coroutines-android           = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlin-coroutines" }
+kotlin-serialization                = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlin-serialization" }
+kotlin-serialization-converter      = { module = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter", version.ref = "kotlin-serialization-converter" }
+kotlin-coroutines                   = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlin-coroutines" }
+
+#preferences
+preferences                          = { module = "androidx.datastore:datastore-preferences", version.ref = "preferences" }
+
+#Network
+retrofit                             = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+converterGson                        = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+okHttp                               = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+logInterceptor                       = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okhttp" }
+#formatLogIntercepter                 = { module = "com.github.ihsanbal:LoggingInterceptor", version.ref = "formatLogIntercepter" }
+gson                                 = { module = "com.google.code.gson:gson", version.ref = "gson" }
+
+#Navigation
+navigationFragment                   = {module="androidx.navigation:navigation-fragment-ktx",version.ref = "nav" }
+navigation                           = {module="androidx.navigation:navigation-ui-ktx",version.ref = "nav" }
+
+#lifeCycle
+viewModel                           ={module="androidx.lifecycle:lifecycle-viewmodel-ktx",version.ref="lifecycle_version"}
+liveData                            ={module="androidx.lifecycle:lifecycle-livedata-ktx",version.ref="lifecycle_version"}
+
+# test libraries
+test-junit                          = { module = "junit:junit", version.ref = "test-junit" }
+test-junit-ex                       = { module = "androidx.test.ext:junit", version.ref = "test-junit-ex" }
+test-kotlin                         = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+test-kotlin-coroutines              = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlin-coroutines" }
+test-mockk                          = { module = "io.mockk:mockk", version.ref = "test-mockk" }
+test-robolectric                    = { module = "org.robolectric:robolectric", version.ref = "test-robolectric" }
+truth                               = { module = "com.google.truth:truth", version.ref = "truth" }
+robolectric                         = { module = "org.robolectric:robolectric", version.ref = "robolectric" }
+testCore                            = { module = "androidx.test:core-ktx", version.ref = "testCore" }
+livedata-test                       = { module = "androidx.arch.core:core-testing", version.ref = "livedata-test" }
+mockito-test                       = { module = "org.mockito.kotlin:mockito-kotlin", version.ref = "mockito-test" }
+
+#android Test
+espresso                            ={module="androidx.test.espresso:espresso-core",version.ref="espresso-version"}
+testRulus                            ={module="androidx.test:rules",version.ref="testRulesVersion"}
+
+
+# android test libraries
+test-android-runner                 = { module = "androidx.test:runner", version.ref = "test-android-runner" }
+
+#timber
+timber                              = { module = "com.jakewharton.timber:timber", version.ref = "timber_version" }
+
+#room
+room-runtime                        ={module="androidx.room:room-runtime",version.ref="room_version"}
+room-ktx                            ={module="androidx.room:room-ktx",version.ref="room_version"}
+room-compiler                       ={module = "androidx.room:room-compiler", version.ref = "room_version" }
+#firebase
+firebase-crashlytics-ktx            ={ module = "com.google.firebase:firebase-crashlytics-ktx", version.ref = "crashlytics_version" }
+remote-config                       ={ module = "com.google.firebase:firebase-config-ktx",version.ref="remote_config_version" }
+analytics                           ={ module = "com.google.firebase:firebase-analytics",version.ref="analytics_version" }
+#worker manager
+worker = { module = "androidx.work:work-runtime-ktx", version.ref = "worker_version"}
+hilt-common = { module = "androidx.hilt:hilt-common", version.ref = "hilt-common"}
+hilt-work = { module = "androidx.hilt:hilt-work", version.ref = "hilt-work"}
+hilt-compiler-work = { module = "androidx.hilt:hilt-compiler", version.ref = "hilt-compiler-work" }
+
+[bundles]
+appbase = [
+    "core",
+    "appcompat",
+    "material",
+    "constrain",
+    "activity",
+    "fragment",
+    "picasso",
+    "timber",
+    "swiperefreshlayout",
+    "worker",
+    "hilt-common",
+    "hilt-work"
+]
+network =[
+    "retrofit",
+    "converterGson",
+    "okHttp",
+    "logInterceptor",
+    #    "formatLogIntercepter",
+    "gson"
+]
+commonTest = [
+    "test-junit",
+    "test-kotlin",
+    "test-kotlin-coroutines",
+    "test-mockk",
+    "truth",
+    "robolectric",
+    "testCore",
+    "livedata-test",
+    "mockito-test"
+]
+common-android-test = [
+    "test-android-runner",
+    "test-junit-ex",
+    "espresso",
+    "test-android-runner",
+    "testRulus",
+    "test-junit",
+    "test-kotlin",
+    "test-kotlin-coroutines",
+    "test-mockk",
+    "truth",
+    "robolectric",
+    "testCore",
+    "livedata-test",
+    "mockito-test"
+]
+uidimension =[
+    "intuitsp",
+    "intuitdp"
+]
+nav =[
+    "navigationFragment",
+    "navigation"
+]
+lifeCycle=[
+    "viewModel",
+    "liveData"
+]
+room=[
+    "room-ktx",
+    "room-runtime",
+    "room-compiler"
+]
+firebase = [
+    "firebase-crashlytics-ktx",
+    "remote-config",
+    "analytics"
+]
